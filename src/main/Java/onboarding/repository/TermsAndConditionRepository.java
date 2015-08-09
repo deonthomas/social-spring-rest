@@ -7,4 +7,3 @@ import org.springframework.stereotype.Repository;
 public interface TermsAndConditionRepository  extends CrudRepository<Conditions, Integer  > {
     boolean hasAcceptedTerms();
 }
-

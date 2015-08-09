@@ -16,19 +16,13 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.web.client.RestTemplate;
+import treasure.web.TreasureApplication;
 import treasure.web.TreasureConfiguration;
 
 import javax.inject.Inject;
 import java.net.URL;
 
-@RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = {TreasureConfiguration.class, RegistrationTests.TestApplicationConfiguration.class})
-@WebAppConfiguration
-@IntegrationTest({"server.port=0"})
 public class RegistrationTests extends  AbstractTestClass {
-
-    @Value("${local.server.port}")
-    protected int port;
 
 
     @Inject
@@ -38,11 +32,6 @@ public class RegistrationTests extends  AbstractTestClass {
     public UserRepository userRepository;
 
     private String url;
-
-    private URL base;
-
-    @Inject
-    protected RestTemplate template;
 
     @Before
     public void setUp() throws Exception {

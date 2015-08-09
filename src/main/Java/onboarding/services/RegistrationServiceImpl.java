@@ -13,9 +13,9 @@ import javax.inject.Inject;
 public class RegistrationServiceImpl implements RegistrationService {
 
     @Inject
-    private final TermsAndConditionRepository repository;
+    private  TermsAndConditionRepository repository;
     @Inject
-    private final UserRepository userRepository;
+    private  UserRepository userRepository;
 
     @Inject
     public RegistrationServiceImpl(TermsAndConditionRepository repository, UserRepository userRepository) {
@@ -23,17 +23,15 @@ public class RegistrationServiceImpl implements RegistrationService {
         this.userRepository = userRepository;
     }
 
-    public User register(Registration registration) {
-        if (repository.hasAcceptedTerms()) {
-            return new User();
-        } else {
-            throw new TermsAndConditionsNotAcceptedException("Terms and conditions not accepted");
-        }
+
+    @Inject
+    public RegistrationServiceImpl(TermsAndConditionRepository repository){
+        this.repository = repository;
     }
 
-    public User unRegister(long registrationId) {
+    public User register(Registration registration) {
         if (repository.hasAcceptedTerms()) {
-            return new User();
+           return  new User() ;//todo: fixup
         } else {
             throw new TermsAndConditionsNotAcceptedException("Terms and conditions not accepted");
         }

@@ -1,14 +1,18 @@
 package treasure.web;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.web.bind.annotation.*;
 import treasure.services.TreasureService;
+
+import javax.inject.Inject;
 
 @EnableAutoConfiguration
 @RequestMapping(value = "/hunts", produces = "application/json")
 @RestController
 public class HuntController {
 
+    @Inject
     private TreasureService treasureService;
 
 

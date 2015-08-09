@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Controller.Tests.HuntControllerTests" time="0.02" tests="2" errors="0" skipped="0" failures="1">
+<testsuite name="Controller.Tests.HuntControllerTests" time="0.021" tests="2" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_45.jdk/Contents/Home/jre/lib"/>
@@ -62,14 +62,14 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="shouldGetTrendingTreasureHunts" classname="Controller.Tests.HuntControllerTests" time="0.018">
-    <failure message="expected:&lt;[treasure.web.UserTreasureHunt@1f554b06]&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<[treasure.web.UserTreasureHunt@1f554b06]> but was:<null>
+  <testcase name="shouldGetTrendingTreasureHunts" classname="Controller.Tests.HuntControllerTests" time="0.02">
+    <failure message="expected:&lt;[treasure.web.UserTreasureHunt@2d6eabae]&gt; but was:&lt;null&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected:<[treasure.web.UserTreasureHunt@2d6eabae]> but was:<null>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Controller.Tests.HuntControllerTests.shouldGetTrendingTreasureHunts(HuntControllerTests.java:62)
+	at Controller.Tests.HuntControllerTests.shouldGetTrendingTreasureHunts(HuntControllerTests.java:64)
 ]]></failure>
   </testcase>
-  <testcase name="shouldGetUserTreasureHunts" classname="Controller.Tests.HuntControllerTests" time="0.002"/>
+  <testcase name="shouldGetUserTreasureHunts" classname="Controller.Tests.HuntControllerTests" time="0.001"/>
 </testsuite>

@@ -23,10 +23,6 @@ public class RegistrationController {
     private RegistrationServiceImpl registrationService;
     private TermsAndConditionRepository termsAndConditionRepository;
 
-    @Inject
-    public RegistrationController(RegistrationServiceImpl registrationService) {
-        this.registrationService = registrationService;
-    }
 
     @Inject
     public RegistrationController(RegistrationServiceImpl registrationService, TermsAndConditionRepository termsAndConditionRepository) {
@@ -41,15 +37,5 @@ public class RegistrationController {
             return registrationService.register(registration);
         }
         throw new IllegalArgumentException(registration.toString());
-    }
-
-    @RequestMapping(value = "/unregister", method = RequestMethod.POST)
-    public User unRegister(@PathVariable long id) {
-        /*if (registrationService.unRegister(id)) {
-            return new User();
-        } else {
-            throw new TermsAndConditionsNotAcceptedException("Terms and conditions not accepted");
-        }*/
-        return new User();
     }
 }

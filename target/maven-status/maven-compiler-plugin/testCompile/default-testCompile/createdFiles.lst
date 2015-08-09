@@ -1,9 +1,8 @@
-integration/tests/DataInterfaceTests$TestApplicationConfiguration.class
-integration/tests/RegistrationRepository.class
+integration/tests/RegistrationTests.class
+integration/tests/RegistrationTests$TestApplicationConfiguration.class
 services/AuthenticationServiceTests.class
 services/RegistrationServiceTest.class
 integration/tests/AbstractTestClass.class
 onboarding/controllers/RegistrationControllerTests.class
 Controller/Tests/HuntControllerTests.class
 onboarding/controllers/AuthenticationControllerTests.class
-integration/tests/DataInterfaceTests.class

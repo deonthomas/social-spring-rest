@@ -4,6 +4,7 @@ import onboarding.repository.UserRepository;
 import onboarding.services.interfaces.AuthenticationService;
 import onboarding.services.AuthenticationServiceImpl;
 import org.hamcrest.Matcher;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Matchers;
@@ -19,6 +20,7 @@ import static org.mockito.Mockito.*;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 @RunWith(MockitoJUnitRunner.class)
+@Ignore
 public class AuthenticationServiceTests {
 
     @Mock

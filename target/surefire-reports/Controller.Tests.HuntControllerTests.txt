@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: Controller.Tests.HuntControllerTests
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.212 sec <<< FAILURE! - in Controller.Tests.HuntControllerTests
-shouldGetTrendingTreasureHunts(Controller.Tests.HuntControllerTests)  Time elapsed: 0.018 sec  <<< FAILURE!
-java.lang.AssertionError: expected:<[treasure.web.UserTreasureHunt@1f554b06]> but was:<null>
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.23 sec <<< FAILURE! - in Controller.Tests.HuntControllerTests
+shouldGetTrendingTreasureHunts(Controller.Tests.HuntControllerTests)  Time elapsed: 0.02 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<[treasure.web.UserTreasureHunt@2d6eabae]> but was:<null>
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at Controller.Tests.HuntControllerTests.shouldGetTrendingTreasureHunts(HuntControllerTests.java:62)
+	at Controller.Tests.HuntControllerTests.shouldGetTrendingTreasureHunts(HuntControllerTests.java:64)
 

@@ -1,8 +1,7 @@
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/integration/tests/AbstractTestClass.java
-/Users/Deon/Documents/eblocks.delta.treasure/src/test/java/integration/tests/DataInterfaceTests.java
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/services/RegistrationServiceTest.java
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/services/AuthenticationServiceTests.java
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/onboarding/controllers/RegistrationControllerTests.java
-/Users/Deon/Documents/eblocks.delta.treasure/src/test/java/integration/tests/RegistrationRepository.java
+/Users/Deon/Documents/eblocks.delta.treasure/src/test/java/integration/tests/RegistrationTests.java
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/onboarding/controllers/AuthenticationControllerTests.java
 /Users/Deon/Documents/eblocks.delta.treasure/src/test/java/Controller/Tests/HuntControllerTests.java
