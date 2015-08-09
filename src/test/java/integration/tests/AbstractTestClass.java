@@ -11,7 +11,7 @@ import treasure.web.TreasureApplication;
 import javax.inject.Inject;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = {DataInterfaceTests.TestApplicationConfiguration.class, TreasureApplication.class})
+@SpringApplicationConfiguration(classes = {RegistrationTests.TestApplicationConfiguration.class, TreasureApplication.class})
 @WebAppConfiguration
 @IntegrationTest("server.port:0")
 public abstract class AbstractTestClass {

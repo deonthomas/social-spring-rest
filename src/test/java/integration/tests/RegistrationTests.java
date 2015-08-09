@@ -2,14 +2,12 @@ package integration.tests;
 
 import domain.Registration;
 import domain.User;
-import onboarding.controllers.RegistrationController;
 import onboarding.repository.TermsAndConditionRepository;
 import onboarding.repository.UserRepository;
 import onboarding.services.RegistrationServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.IntegrationTest;
 import org.springframework.boot.test.SpringApplicationConfiguration;
@@ -24,10 +22,10 @@ import javax.inject.Inject;
 import java.net.URL;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@SpringApplicationConfiguration(classes = {TreasureConfiguration.class, DataInterfaceTests.TestApplicationConfiguration.class})
+@SpringApplicationConfiguration(classes = {TreasureConfiguration.class, RegistrationTests.TestApplicationConfiguration.class})
 @WebAppConfiguration
 @IntegrationTest({"server.port=0"})
-public class DataInterfaceTests extends  AbstractTestClass {
+public class RegistrationTests extends  AbstractTestClass {
 
     @Value("${local.server.port}")
     protected int port;
